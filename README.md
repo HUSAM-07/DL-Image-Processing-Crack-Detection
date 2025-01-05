@@ -33,3 +33,31 @@ flowchart TB
         D8 --> D9[Crack Path Output]
     end
 ```
+
+## Updated High-Level Architecture
+
+```mermaid
+
+flowchart TD
+subgraph Data[Data Pipeline]
+A[Initial Images<br/>frame_0] --> B[Image Preprocessing]
+C[Final Images<br/>frame_-1] --> B
+B --> D[Train/Val/Test Split]
+end
+subgraph Model[Model Architecture]
+E[Encoder<br/>CNN Layers] --> F[Latent Space]
+F --> G[Decoder<br/>Transpose CNN]
+end
+subgraph Training[Training Process]
+H[Loss Function<br/>MSE/MAE] --> I[Optimization<br/>Adam]
+I --> J[Validation]
+end
+D --> E
+G --> H
+J --> |Feedback|E
+subgraph Evaluation[Model Evaluation]
+K[Test Set<br/>Predictions] --> L[Metrics<br/>SSIM/PSNR]
+L --> M[Visual<br/>Comparison]
+end
+
+```
