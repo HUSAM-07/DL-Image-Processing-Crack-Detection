@@ -1,7 +1,10 @@
 # Deep Learning for Image Processing & Crack-Detection
 Image Processing for Crack Detection  using XFEM, Machine Learning &amp; Deep Learning Techniques
 
-For Extended Notes, Refer to [Notes](/notes.md)
+For Extended Summary, Refer to [Notes](/notes.md)
+
+### Summarized Poster:
+![Poster](/Explanation_Poster.png)
 
 ```mermaid
 flowchart TB
