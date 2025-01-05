@@ -3,7 +3,7 @@ Image Processing for Crack Detection  using XFEM, Machine Learning &amp; Deep Le
 
 For Extended Summary, Refer to [Notes](/notes.md)
 
-The Repo is obviously not well structured(at least to my liking), This will be imporved and properly documented after the research reaches it's ideal stages and a paper is submitted
+*_The Repo is obviously not well structured(at least to my liking), This will be imporved and properly documented after the research reaches it's ideal stages and a paper is submitted_*
 
 ### Summarized Poster:
 ![Poster](/Explanation_Poster.png)
